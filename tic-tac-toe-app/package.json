@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
     "@types/node": "^12.20.37",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
@@ -19,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "playwright": "playwright test",
     "playwright:headed": "playwright test --headed",
     "eject": "react-scripts eject"
@@ -43,6 +42,11 @@
     ]
   },
   "devDependencies": {
-    "@playwright/test": "^1.17.0"
+    "@playwright/test": "^1.17.0",
+    "@testing-library/react-hooks": "^8.0.0",
+    "@types/jest": "^27.5.0",
+    "jest": "^28.0.1",
+    "jest-environment-jsdom": "^28.1.0",
+    "ts-jest": "^28.0.2"
   }
 }
