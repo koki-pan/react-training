@@ -20,7 +20,7 @@ describe('useGame', () => {
 
         test('勝者がいないときはnullを返す', ()=> {
             const squares = Array(9).fill(null)
-            expect(useGame().calculateWinner(squares)).toBe(null)
+            expect(result.current.calculateWinner(squares)).toBe(null)
         })
     }) 
 })

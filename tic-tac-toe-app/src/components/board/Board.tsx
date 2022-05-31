@@ -11,9 +11,8 @@ export const Board: React.FC<BoardProps> = ({ squares, onClick }) => {
     <div>
       {[[0,1,2],[3,4,5],[6,7,8]].map((indexArray,i) => {
         return (
-          <div className="game-board">
+          <div className="game-board" key = {i}>
             <BoardRow 
-              key = {i}
               indexArray = {indexArray}
               squares={squares}
               onClick={onClick}
